@@ -1,0 +1,137 @@
+
+@import url('https://fonts.googleapis.com/css2?family=Geologica&family=Kanit:wght@300&family=Merriweather+Sans&family=Roboto:wght@400;500&display=swap');
+
+
+body {
+    font-family: 'Geologica', sans-serif;
+    display: flex;
+    flex-direction: column;
+    min-height: 100vh;
+    margin-bottom: 80px;
+    text-align: center;
+}
+
+main {
+    flex: 1; 
+}
+
+.logo {
+    width: 100px;
+    cursor: pointer;
+}
+
+.menuNav .nav-link {
+    color: black;
+    align-items: center;
+    font-family: 'Geologica', sans-serif;
+    font-weight: 800;
+    font-size: 18px; 
+    text-transform: uppercase;
+    text-decoration: none;
+    word-spacing: 40px;
+
+}
+
+
+header {
+    display: flex;
+    justify-content: space-around;
+    align-items: center;
+    background-color: white;
+    position: sticky;
+    top: 0;
+    box-shadow: 0px 0px 5px #d8d7d6;
+}
+
+
+.navegador a {
+    color: black; 
+    text-decoration: none;
+    text-transform: uppercase;
+    font-weight: 800;
+    font-size: 18px;
+    
+}
+
+.encabezado {
+    position: sticky;
+  }
+
+
+.video {
+    width: calc(100% - 20px);
+    height: 500px;
+    object-fit: cover;
+    position: fixed;
+    top: 120px;
+    left: 0;
+    z-index: -1;
+    border-radius: 10px;
+    margin-left: 11px;
+    margin-right: 20px; 
+    margin-bottom: 100px;
+}
+
+.overlay {
+    position: absolute;
+    top: 50%;
+    left: 50%;
+    transform: translate(-50%, -50%);
+    text-align: center;
+    color: #fff;
+    z-index: 1;
+    font-size: 20px;
+    text-transform: uppercase;
+}
+
+/*BOTON DE PAGINA INDEX*/
+.orderNow {
+    background-color: #d32124;
+    padding: 15px 45px;
+    border-radius: 0;
+    color: white;
+}
+
+.orderNow:hover {
+    background-color: #a0191b
+}
+
+.logoWhatssap {
+    width: 65px;
+    position: fixed;
+    bottom: 20px;
+    right: 20px;
+    cursor: pointer;
+}
+
+/*BOTON DE PAGINA MENU*/
+.btn-primary {
+    background-color: #d32124; /* Cambia el color a tu elección, en este caso, un tono naranja */
+    color: #ffffff;
+    border: none;
+}
+
+.btn-primary:hover {
+    background-color: #a0191b; /* Cambia el color a tu elección, en este caso, un tono naranja */
+    color: #ffffff;
+}
+
+/*FOOTER*/
+.footer {
+    background-color: #ffffff; /* Cambia el color de fondo del footer */
+    color: black; /* Cambia el color del texto del footer */
+    padding-top: 10px; /* Ajusta el relleno superior del footer */
+    padding-bottom: 10px; /* Ajusta el relleno inferior del footer */
+    width: 100%; /* Ocupa todo el ancho de la ventana */
+    bottom: 0; 
+    margin-top: 20px;
+}
+
+/* Estilos para los enlaces del footer */
+.footer a {
+    color: #87898c; /* Cambia el color de los enlaces del footer */
+}
+
+.footer a:hover {
+    text-decoration: underline; /* Añade subrayado al pasar el mouse sobre los enlaces */
+}
