@@ -1,137 +1,205 @@
-
-@import url('https://fonts.googleapis.com/css2?family=Geologica&family=Kanit:wght@300&family=Merriweather+Sans&family=Roboto:wght@400;500&display=swap');
-
+@charset "UTF-8";
+@import url("https://fonts.googleapis.com/css2?family=Geologica&family=Kanit:wght@300&family=Merriweather+Sans&family=Roboto:wght@400;500&display=swap");
+@import "https://cdn.jsdelivr.net/npm/bootstrap@5.3.2/dist/css/bootstrap.min.css";
+@media (max-width: 768px) {
+  .overlay {
+    font-size: 4vw;
+  }
+  .orderNow {
+    padding: 3% 6%;
+    font-size: 3vw;
+  }
+  .logoWhatssap {
+    width: 8%;
+  }
+}
+.footer {
+  background-color: #ffffff;
+  color: black;
+  padding-top: 100px;
+  padding-bottom: 10px;
+  width: 100%;
+  bottom: 0;
+  margin-top: 20px;
+}
+.footer a {
+  color: #87898c;
+}
+.footer a:hover {
+  text-decoration: underline;
+}
 
 body {
-    font-family: 'Geologica', sans-serif;
-    display: flex;
-    flex-direction: column;
-    min-height: 100vh;
-    margin-bottom: 80px;
-    text-align: center;
+  font-family: "Geologica", sans-serif;
+  display: flex;
+  flex-direction: column;
+  min-height: 100vh;
+  margin-bottom: 80px;
+  text-align: center;
 }
 
 main {
-    flex: 1; 
+  flex: 1;
+}
+
+html {
+  font-size: 70%;
 }
 
 .logo {
-    width: 100px;
-    cursor: pointer;
+  width: 100px;
+  cursor: pointer;
 }
 
 .menuNav .nav-link {
-    color: black;
-    align-items: center;
-    font-family: 'Geologica', sans-serif;
-    font-weight: 800;
-    font-size: 18px; 
-    text-transform: uppercase;
-    text-decoration: none;
-    word-spacing: 40px;
-
+  text-decoration: none;
+  color: black;
+  align-items: center;
+  font-family: "Geologica", sans-serif;
+  font-weight: 800;
+  font-size: 18px;
+  text-transform: uppercase;
+  word-spacing: 50%;
 }
-
 
 header {
-    display: flex;
-    justify-content: space-around;
-    align-items: center;
-    background-color: white;
-    position: sticky;
-    top: 0;
-    box-shadow: 0px 0px 5px #d8d7d6;
+  display: flex;
+  justify-content: space-around;
+  align-items: center;
+  background-color: white;
+  position: sticky;
+  top: 0;
+  box-shadow: 0px 0px 5px #d8d7d6;
 }
 
-
 .navegador a {
-    color: black; 
-    text-decoration: none;
-    text-transform: uppercase;
-    font-weight: 800;
-    font-size: 18px;
-    
+  text-decoration: none;
+  color: black;
+  text-transform: uppercase;
+  font-weight: 800;
+  font-size: 18px;
 }
 
 .encabezado {
-    position: sticky;
-  }
+  position: sticky;
+  top: 0;
+  z-index: 1000;
+}
 
+main {
+  position: relative;
+  z-index: 1;
+}
+
+.video-section {
+  position: relative;
+  width: 100vw;
+  overflow: hidden;
+  margin-bottom: 10px;
+}
 
 .video {
-    width: calc(100% - 20px);
-    height: 500px;
-    object-fit: cover;
-    position: fixed;
-    top: 120px;
-    left: 0;
-    z-index: -1;
-    border-radius: 10px;
-    margin-left: 11px;
-    margin-right: 20px; 
-    margin-bottom: 100px;
+  width: 100%;
+  height: 500px;
+  object-fit: cover;
+  position: relative;
+  border-radius: 10px;
+  padding-right: 30px;
 }
 
 .overlay {
-    position: absolute;
-    top: 50%;
-    left: 50%;
-    transform: translate(-50%, -50%);
-    text-align: center;
-    color: #fff;
-    z-index: 1;
-    font-size: 20px;
-    text-transform: uppercase;
-}
-
-/*BOTON DE PAGINA INDEX*/
-.orderNow {
-    background-color: #d32124;
-    padding: 15px 45px;
-    border-radius: 0;
-    color: white;
-}
-
-.orderNow:hover {
-    background-color: #a0191b
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  position: absolute;
+  top: 50%;
+  left: 50%;
+  transform: translate(-50%, -50%);
+  text-align: center;
+  color: #fff;
+  z-index: 1;
+  font-size: 3vw;
+  text-transform: uppercase;
 }
 
 .logoWhatssap {
-    width: 65px;
-    position: fixed;
-    bottom: 20px;
-    right: 20px;
-    cursor: pointer;
+  width: 65px;
+  position: fixed;
+  bottom: 20px;
+  right: 20px;
+  cursor: pointer;
 }
 
-/*BOTON DE PAGINA MENU*/
 .btn-primary {
-    background-color: #d32124; /* Cambia el color a tu elección, en este caso, un tono naranja */
-    color: #ffffff;
-    border: none;
+  background-color: #d32124;
+  padding: 2% 4%;
+  border-radius: 5px;
+  color: white;
+  font-size: 2vw;
+  display: inline-block; /* Añade esta propiedad */
+  white-space: nowrap; /* Añade esta propiedad para evitar que se rompa el texto en varias líneas */
+  white-space: nowrap;
+  border: none;
 }
-
+@media (max-width: 768px) {
+  .btn-primary {
+    font-size: 3vw;
+  }
+}
 .btn-primary:hover {
-    background-color: #a0191b; /* Cambia el color a tu elección, en este caso, un tono naranja */
-    color: #ffffff;
+  background-color: #a0191b;
 }
 
-/*FOOTER*/
-.footer {
-    background-color: #ffffff; /* Cambia el color de fondo del footer */
-    color: black; /* Cambia el color del texto del footer */
-    padding-top: 10px; /* Ajusta el relleno superior del footer */
-    padding-bottom: 10px; /* Ajusta el relleno inferior del footer */
-    width: 100%; /* Ocupa todo el ancho de la ventana */
-    bottom: 0; 
-    margin-top: 20px;
+.seccion-dos {
+  margin-top: 10px;
 }
 
-/* Estilos para los enlaces del footer */
-.footer a {
-    color: #87898c; /* Cambia el color de los enlaces del footer */
+.card-img-custom {
+  width: 100%;
+  height: auto;
 }
 
-.footer a:hover {
-    text-decoration: underline; /* Añade subrayado al pasar el mouse sobre los enlaces */
+.btn-second {
+  text-decoration: none;
+  background-color: #d32124;
+  color: #ffffff;
+  border: none;
+  width: 35%;
+  height: 100%;
+  font-size: 15px;
+  border-radius: 5px;
+  padding: 5px 10px;
+  text-transform: uppercase;
 }
+.btn-second:hover {
+  background-color: #a0191b;
+  color: #ffffff;
+}
+
+/*CARRUSEL*/
+.carousel-item img {
+  max-height: 500px;
+  max-width: 90%;
+  margin: auto;
+  display: block;
+}
+
+.costum-carousel .carousel-caption {
+  text-transform: uppercase;
+  background-color: rgba(0, 0, 0, 0.5);
+  text-align: center;
+}
+.costum-carousel .carousel-caption .carousel-indicators {
+  top: 100px;
+}
+.costum-carousel .carousel-caption h5 {
+  font-size: 2.7rem;
+  font-weight: bold;
+  color: #fff;
+}
+.costum-carousel .carousel-caption p {
+  font-size: 2rem;
+  color: #fff;
+}
+
+/*# sourceMappingURL=estilo.css.map */
